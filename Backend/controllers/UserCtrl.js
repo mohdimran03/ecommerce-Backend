@@ -19,7 +19,7 @@ exports.RegisterUser =catchAsyncErrors(async(req,res,next)=>{
         }
     })
     
-    const token   =  jwtToken.getjwttoken(user)
+    const token = jwtToken.getjwttoken(user)
 
     res.status(201).json({
         success:true,
